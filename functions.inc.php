@@ -17,7 +17,7 @@ function html_escape($str) {
 
 function postToTwitter($user,$msg) {
 	$username = 'sbb' . strtolower($user);
-	$password = 'keller';
+	$password = '';
 
 	$message = urlencode($msg);
 	$url = 'http://twitter.com/statuses/update.xml';
