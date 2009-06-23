@@ -1,0 +1,41 @@
+SBB Train Information System (STIS)
+===================================
+
+STIS is a simple Twitter tool that reports delays in the SBB network (www.sbb) to some Twitter accounts.
+
+At the same time it generates a XML document that can be used for other tools or systems.
+
+XML View:
+<sbbprosurf station="zue">
+	<report>
+		<departure>11:22</departure>
+		<type>S-Bahn</type>
+		<number>19538</number>
+		<terminus>&nbsp;Affoltern am Albis</terminus>
+		<predicted>11:22</predicted>
+
+		<notes>&nbsp;</notes>
+	</report>
+	<report>
+		<departure>11:25</departure>
+		<type>S-Bahn</type>
+		<number>18541</number>
+		<terminus>&nbsp;Pf&auml;ffikon SZ</terminus>
+
+		<predicted>11:25</predicted>
+		<notes>&nbsp;</notes>
+	</report>
+	<report>
+		<departure>11:27</departure>
+		<type>S-Bahn</type>
+		<number>18240</number>
+
+		<terminus>&nbsp;Effretikon</terminus>
+		<predicted>11:27</predicted>
+		<notes>&nbsp;</notes>
+	</report>
+</sbbprosurf>
+
+Data source
+===========
+The SBB information comes from http://prosurf.sbb.ch/ and is parsed with htmlsql (http://www.jonasjohn.de/lab/htmlsql.htm).
